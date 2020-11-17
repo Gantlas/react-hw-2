@@ -1,0 +1,19 @@
+.figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition-duration: 0.3s;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
