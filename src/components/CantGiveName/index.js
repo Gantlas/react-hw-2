@@ -6,10 +6,10 @@ import s from "./style.module.css";
 import Figure from "../Figure";
 
 const CantGiveName = () => {
-  const shapes = ["square", "circle"];
+  const shapes = [1, 2];
   const colors = ["red", "gray", "blue", "cyan", "yellow", "orange"];
 
-  const [shape, setShape] = useState("");
+  const [shape, setShape] = useState(0);
   const [color, setColor] = useState("red");
 
   return (
