@@ -10,7 +10,7 @@ const CantGiveName = () => {
   const colors = ["red", "gray", "blue", "cyan", "yellow", "orange"];
 
   const [shape, setShape] = useState(0);
-  const [color, setColor] = useState("red");
+  const [color, setColor] = useState(colors[0]);
 
   return (
     <Router>
@@ -31,7 +31,7 @@ const CantGiveName = () => {
           {colors.map((item, i) => (
             <li key={i} className={s.item}>
               <Link
-                to={`/figure/${shape}/${item}`}
+                to={`/figure/${shape || shapes[0]}/${item}`}
                 onClick={() => setColor(item)}
               >
                 {item}
